@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024, user-scalable=yes, minimum-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форум как стать русалкой</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
@@ -69,7 +69,14 @@
           padding: 6px 10px;
           margin: -16px -16px 16px -16px;
       }
-
+      @media (max-width: 640px) {
+          .wrap {
+              width: 100vw;
+          }
+          .forum-body {
+              height: 250px;
+          }
+      }
       
     </style>
   </head>
